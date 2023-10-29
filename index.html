@@ -2,36 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css">
+    <link rel="icon" href="src/assets/calc.png">
     <title>Calculator</title>
   </head>
-  <body class="bg-[url('/src/assets/estadio.jpg')] bg-cover">
-    <div class="w-screen h-screen bg-black opacity-70 absolute z-1"></div>
+  <body class="bg-black bg-cover">
+    <div class="w-screen h-screen bg-black opacity-90 absolute z-1"></div>
     <main class="w-full h-screen flex justify-center items-center">
-        <section class="bg-black p-6 text-white w-[70%] sm:w-[95%] max-w-[500px] rounded-md relative m-5" >
+        <section class="bg-gray p-6 text-white w-[70%] sm:w-[95%] max-w-[500px] rounded-md relative m-5" >
           <header class="mb-10">
-            <h1 class="text-[18px] border-b-2 border-b-gray text-center">Afonso's Terminator Calculator 3000</h1>
+            <h1 class="text-[22px] border-b-2 border-b-gray text-center">Afonso's Terminator Calculator 3000</h1>
   
-            <div class="w-full h-20 bg-white my-4 rounded-md text-black flex items-center justify-end text-4xl font-bold pr-1 overflow-hidden">
+            <div class="w-full h-20 bg-slate-500 my-4 rounded-md text-white flex items-center justify-end text-4xl font-bold pr-1 overflow-hidden">
               <p id="display"></p>
             </div>
           </header>
   
           <div class="flex justify-between mb-5]">
             <div class="grid grid-rows-4 grid-cols-3 gap-3 text-5xl md:text-4xl xs:grid-rows-[repeat(4,50px)] xs:grid-cols-[repeat(3,50px)] md:grid-rows-[repeat(4,60px)] md:grid-cols-[repeat(3,60px)] md:gap-2">
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">7</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">8</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">9</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">4</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">5</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">6</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">1</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">2</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">3</button>
-              <button class="number w-100 h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50 col-span-2">0</button>
-              <button class="number w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">.</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">7</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">8</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">9</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">4</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">5</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">6</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">1</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">2</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">3</button>
+              <button class="number border-b-2 w-100 h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50 col-span-2">0</button>
+              <button class="number border-b-2 w-[70px] h-[70px] md:w-full md:h-full bg-gray rounded-md cursor-pointer hover:opacity-50">.</button>
             </div>
   
             <div class="grid grid-rows-4 grid-cols-2 gap-3 text-5xl md:text-4xl xs:grid-rows-[repeat(4,50px)] xs:grid-cols-[repeat(2,50px)] md:grid-rows-[repeat(4,60px)] md:grid-cols-[repeat(2,60px)] md:gap-2">
@@ -46,7 +46,7 @@
             </div>
           </div>
   
-          <div class="w-full bg-intense-red mt-10 mb-5 p-2 overflow-hidden">
+          <div class="w-full bg-intense-red mt-10 mb-5 p-2 overflow-hidden rounded-xl">
             <p class="text-white font-extrabold text-2xl xs:text-[16px] flex items-center animate-loading"><img src="src/assets/benfica.png" class="w-10" alt="benfica logo">Carrega Benfica... <img src="src/assets/benfica.png" class="w-10" alt="benfica logo">
             </p>
           </div>
